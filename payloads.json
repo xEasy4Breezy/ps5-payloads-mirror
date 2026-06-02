@@ -12,9 +12,9 @@
     "checksum": "f4e79bf2d859a70092b008b39c678447aaafc436d6cc54c025469e5429178171"
   },
   {
-    "name": "PS5-Lapy-JB-Daemon",
-    "filename": "PS5-Lapy-JB-Daemon_v1.2.elf",
-    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/PS5-Lapy-JB-Daemon_v1.2.elf",
+    "name": "Lapy-JB-Daemon",
+    "filename": "Lapy-JB-Daemon_v1.2.elf",
+    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/Lapy-JB-Daemon_v1.2.elf",
     "source": "https://github.com/itsPLK/PS5-Lapy-JB-Daemon/releases",
     "source_direct": "https://github.com/itsPLK/PS5-Lapy-JB-Daemon/releases/download/v1.2/lapy_jb_daemon-v1.2.elf",
     "description": "Standalone homebrew jailbreak daemon for PS5. Mimics etaHEN's jailbreak-on-demand API.",
