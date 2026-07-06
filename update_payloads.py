@@ -13,6 +13,7 @@ from datetime import datetime
 JSON_FILE = "payloads.json"
 PAYLOADS_DIR = "payloads"
 BASE_URL = "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror"
+STATS_FILE = "download_stats.json"
 
 def get_repo_info(url):
     # Extract domain, owner and repo from various Git URL formats
@@ -170,8 +171,8 @@ def get_mirror_assets():
         print(f"Error fetching mirror assets: {e}")
     return set()
 
-def cleanup_release_assets():
-    print("\nChecking for stale release assets to clean up...")
+def cleanup_and_record_stats():
+    print("\nChecking for stale release assets to record stats and clean up...")
     owner = "itsPLK"
     repo = "ps5-payloads-mirror"
     
@@ -185,22 +186,46 @@ def cleanup_release_assets():
         release_info = json.loads(result.stdout)
         
         assets = release_info.get("assets", [])
+        
+        # Load existing stats
+        stats = {}
+        if os.path.exists(STATS_FILE):
+            try:
+                with open(STATS_FILE, "r") as f:
+                    stats = json.load(f)
+            except Exception:
+                pass
+                
         deleted_count = 0
+        stats_updated = False
+        
         for asset in assets:
             asset_name = asset["name"]
             asset_id = asset["id"]
+            download_count = asset.get("download_count", 0)
             
             if asset_name not in expected_files:
+                print(f"  Recording stats for stale asset: {asset_name} (Downloads: {download_count})...")
+                stats[asset_name] = {
+                    "download_count": download_count,
+                    "deleted_at": datetime.now().strftime("%Y-%m-%d")
+                }
+                stats_updated = True
+                
                 print(f"  Removing stale asset: {asset_name} (ID: {asset_id})...")
                 del_cmd = ["gh", "api", "-X", "DELETE", f"repos/{owner}/{repo}/releases/assets/{asset_id}"]
                 subprocess.run(del_cmd, check=True)
                 print(f"  Successfully removed {asset_name}.")
                 deleted_count += 1
                 
+        if stats_updated:
+            with open(STATS_FILE, "w") as f:
+                json.dump(stats, f, indent=2)
+                
         if deleted_count == 0:
             print("  No stale assets to remove.")
         else:
-            print(f"  Removed {deleted_count} stale assets.")
+            print(f"  Removed {deleted_count} stale assets and recorded their stats.")
                 
     except Exception as e:
         print(f"Error cleaning up release assets: {e}")
@@ -392,7 +417,7 @@ def update_payloads():
         print(f"\nSorted {JSON_FILE} (no new files downloaded).")
         
     update_readme()
-    cleanup_release_assets()
+    cleanup_and_record_stats()
 
 if __name__ == "__main__":
     update_payloads()
