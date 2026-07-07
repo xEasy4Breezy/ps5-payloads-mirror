@@ -1,5 +1,16 @@
 [
   {
+    "name": "ps5-linux-loader",
+    "filename": "ps5-linux-loader_v2.4.elf",
+    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5-linux-loader_v2.4.elf",
+    "source": "https://github.com/ps5-linux/ps5-linux-loader/releases",
+    "source_direct": "https://github.com/ps5-linux/ps5-linux-loader/releases/download/v2.4/ps5-linux-loader.elf",
+    "description": "Linux payload implementing HV exploits to run a custom bootloader",
+    "last_update": "2026-07-06",
+    "version": "v2.4",
+    "checksum": "51382795b486f7c5a3681648d457d129088311fc3f9601aeaff78dc72fafcf1d"
+  },
+  {
     "name": "kstuff-lite",
     "filename": "kstuff-lite_v1.09.elf",
     "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/kstuff-lite_v1.09.elf",
@@ -9,17 +20,6 @@
     "last_update": "2026-07-04",
     "version": "v1.09",
     "checksum": "ec5212794dc6e44ee8e70fd0549abec6d3dac8c3e03ddbeafd9f869ffe97d4e8"
-  },
-  {
-    "name": "ps5-linux-loader",
-    "filename": "ps5-linux-loader_v2.3.elf",
-    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5-linux-loader_v2.3.elf",
-    "source": "https://github.com/ps5-linux/ps5-linux-loader/releases",
-    "source_direct": "https://github.com/ps5-linux/ps5-linux-loader/releases/download/v2.3/ps5-linux-loader.elf",
-    "description": "Linux payload implementing HV exploits to run a custom bootloader",
-    "last_update": "2026-07-01",
-    "version": "v2.3",
-    "checksum": "0723b5d5e09120861023e91780d9ec345a3aa2f32c8a17fdfb3a60a9e934e8a5"
   },
   {
     "name": "ShadowMountPlus",
