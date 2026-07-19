@@ -55,7 +55,7 @@ def calculate_checksum(filepath):
         return None
 
 def reorder_item(item):
-    order = ["name", "filename", "url", "source", "source_direct", "asset_pattern", "extract_file", "description", "last_update", "version", "checksum"]
+    order = ["name", "filename", "url", "source", "source_direct", "asset_pattern", "extract_file", "description", "last_update", "version", "category", "checksum"]
     new_item = {}
     for key in order:
         if key in item:
@@ -80,8 +80,32 @@ def add_payload():
         return
         
     description = input("Description (optional): ").strip()
+
+    try:
+        with open(JSON_FILE, "r") as f:
+            payloads = json.load(f)
+    except FileNotFoundError:
+        payloads = []
+
+    existing_categories = sorted(list(set(p.get("category", "Uncategorized") for p in payloads if "category" in p and p.get("category") != "Uncategorized")))
+    if not existing_categories:
+        existing_categories = ["System & Jailbreak", "Networking & Servers", "Loaders", "Utilities & Tools"]
     
-    print(f"Fetching latest release info for {owner}/{repo} on {domain}...")
+    print("\nAvailable Categories:")
+    for i, cat in enumerate(existing_categories, 1):
+        print(f"{i}. {cat}")
+    print("0. Add new category")
+    
+    cat_choice = input("Select a category number (or press Enter for Uncategorized): ").strip()
+    category = "Uncategorized"
+    if cat_choice.isdigit():
+        idx = int(cat_choice)
+        if idx == 0:
+            category = input("Enter new category name: ").strip()
+        elif 1 <= idx <= len(existing_categories):
+            category = existing_categories[idx-1]
+    
+    print(f"\nFetching latest release info for {owner}/{repo} on {domain}...")
     try:
         if domain == "github.com":
             cmd = ["gh", "api", f"repos/{owner}/{repo}/releases/latest"]
@@ -121,12 +145,6 @@ def add_payload():
     if not selected_asset:
         print("Error: Could not find a suitable .elf, .bin or .zip asset in the latest release.")
         return
-
-    try:
-        with open(JSON_FILE, "r") as f:
-            payloads = json.load(f)
-    except FileNotFoundError:
-        payloads = []
 
     source_url = f"https://{domain}/{owner}/{repo}/releases"
     if any(p.get("source") == source_url for p in payloads):
@@ -204,6 +222,7 @@ def add_payload():
             "description": description,
             "last_update": release["published_at"][:10],
             "version": new_version,
+            "category": category,
             "checksum": calculate_checksum(filepath)
         }
         if extract_file:
