@@ -1,15 +1,15 @@
 [
   {
     "name": "ps5upload",
-    "filename": "ps5upload_v5.17.1.elf",
-    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5upload_v5.17.1.elf",
+    "filename": "ps5upload_v5.17.4.elf",
+    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5upload_v5.17.4.elf",
     "source": "https://github.com/phantomptr/ps5upload/releases",
-    "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v5.17.1/ps5upload-5.17.1.elf",
+    "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v5.17.4/ps5upload-5.17.4.elf",
     "description": "Fast, reliable transfers from your computer to your PS5 (requires PC app)",
-    "last_update": "2026-09-07",
-    "version": "v5.17.1",
+    "last_update": "2026-09-08",
+    "version": "v5.17.4",
     "category": "Networking & Servers",
-    "checksum": "9a912f28264c90ddfe5fee7cecbf96eec5cca2ebbec56518f1975d3786948621"
+    "checksum": "b8f8e415084523486145cffb8a79101d8d39a2df791ab9d1a498d0f627443697"
   },
   {
     "name": "ps5-linux-loader",
