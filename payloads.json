@@ -1,27 +1,39 @@
 [
   {
+    "name": "ps5debug-NG",
+    "filename": "ps5debug-NG_1.3.2.elf",
+    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5debug-NG_1.3.2.elf",
+    "source": "https://github.com/OpenSourcereR-dev/ps5debug-NG/releases",
+    "source_direct": "https://github.com/Pharaoh2k/ps5debug-NG/releases/download/1.3.2/ps5debug-NG_v1.3.2.elf",
+    "description": "PS5 debugger payload - userland TCP wire-protocol server hosted inside SceShellCore.",
+    "last_update": "2026-09-23",
+    "version": "1.3.2",
+    "category": "Utilities & Tools",
+    "checksum": "949b0e6e0fe3f24f4a820319fd76d9ccb92f9770cbb1a64b09a8eca5c1fc9ff3"
+  },
+  {
     "name": "PKG-Manager",
-    "filename": "PKG-Manager_v1.2.1.elf",
-    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/PKG-Manager_v1.2.1.elf",
+    "filename": "PKG-Manager_v1.2.3.elf",
+    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/PKG-Manager_v1.2.3.elf",
     "source": "https://github.com/itsPLK/ps5-pkg-manager/releases",
-    "source_direct": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.2.1/pkgmgr_v1.2.1.elf",
+    "source_direct": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.2.3/pkg-manager_v1.2.3.elf",
     "description": "Browse and install PKGs from USB, disc, or SMB shares directly on your PS5",
     "last_update": "2026-09-22",
-    "version": "v1.2.1",
+    "version": "v1.2.3",
     "category": "Utilities & Tools",
-    "checksum": "dff50e27f954e78838e97bcddbb5914bd348572a3caa3b2f9a0880e25a0f5fbc"
+    "checksum": "b14f0a54c826e5e4bb0b96c38113aa61ea41b0742663242104645add0d85ee19"
   },
   {
     "name": "ps5upload",
-    "filename": "ps5upload_v5.31.4.elf",
-    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5upload_v5.31.4.elf",
+    "filename": "ps5upload_v5.33.1.elf",
+    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5upload_v5.33.1.elf",
     "source": "https://github.com/phantomptr/ps5upload/releases",
-    "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v5.31.4/ps5upload-5.31.4.elf",
+    "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v5.33.1/ps5upload-5.33.1.elf",
     "description": "Fast, reliable transfers from your computer to your PS5 (requires PC app)",
-    "last_update": "2026-09-21",
-    "version": "v5.31.4",
+    "last_update": "2026-09-22",
+    "version": "v5.33.1",
     "category": "Networking & Servers",
-    "checksum": "420bdd4d9328ab1068f32ef1a19f96387586ddd2a308744f81957d04d8a41d3b"
+    "checksum": "75b364880bedaaac1499779d5a459008ca838eb13d30252169f9b134dd32ed63"
   },
   {
     "name": "kstuff-lite",
@@ -239,18 +251,6 @@
     "version": "v1.11",
     "category": "Utilities & Tools",
     "checksum": "42763a6230df8ef3bf82253e9a4290e39d7c1e4b61a0a9a4477368f1d6440e1d"
-  },
-  {
-    "name": "ps5debug-NG",
-    "filename": "ps5debug-NG_1.3.0.elf",
-    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5debug-NG_1.3.0.elf",
-    "source": "https://github.com/OpenSourcereR-dev/ps5debug-NG/releases",
-    "source_direct": "https://github.com/OpenSourcereR-dev/ps5debug-NG/releases/download/1.3.0/ps5debug-NG_v1.3.0.elf",
-    "description": "PS5 debugger payload - userland TCP wire-protocol server hosted inside SceShellCore.",
-    "last_update": "2026-06-21",
-    "version": "1.3.0",
-    "category": "Utilities & Tools",
-    "checksum": "8f75fb90b45d7cc4d59147e3323577d7264cf572c78a27f76722202f492ad16a"
   },
   {
     "name": "zftpd",
