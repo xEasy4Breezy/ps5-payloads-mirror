@@ -12,6 +12,18 @@
     "checksum": "90db08434228a08554e06a949f26457fb25c9b607f126fa63616b8d261426dee"
   },
   {
+    "name": "CheatRunner",
+    "filename": "CheatRunner_v0.17.2.elf",
+    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/CheatRunner_v0.17.2.elf",
+    "source": "https://github.com/notmaj0r/CheatRunner/releases",
+    "source_direct": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.17.2/CheatRunner.elf",
+    "description": "Web-based game cheat trainer",
+    "last_update": "2026-10-01",
+    "version": "v0.17.2",
+    "category": "Utilities & Tools",
+    "checksum": "36ad03e236e6603aaaf05d95ed3399c7b54475a9bceba085cbe02899bc88ae0f"
+  },
+  {
     "name": "WebKit-Autoloader-Installer",
     "filename": "WebKit-Autoloader-Installer_v0.5.2.elf",
     "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/WebKit-Autoloader-Installer_v0.5.2.elf",
@@ -22,18 +34,6 @@
     "version": "v0.5.2",
     "category": "Loaders",
     "checksum": "f990e48e8330231d2066a7b8ab6dc25fda83b2cc36cb426c472b35b33767451a"
-  },
-  {
-    "name": "CheatRunner",
-    "filename": "CheatRunner_v0.17.1.elf",
-    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/CheatRunner_v0.17.1.elf",
-    "source": "https://github.com/notmaj0r/CheatRunner/releases",
-    "source_direct": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.17.1/CheatRunner.elf",
-    "description": "Web-based game cheat trainer",
-    "last_update": "2026-09-30",
-    "version": "v0.17.1",
-    "category": "Utilities & Tools",
-    "checksum": "6863f06cb6ff41f846d84a0542c21469b52cacf55c9e6a0e2c74c114b3a55212"
   },
   {
     "name": "zftpd",
