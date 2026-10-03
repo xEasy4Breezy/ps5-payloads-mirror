@@ -1,5 +1,17 @@
 [
   {
+    "name": "ps5-app-dumper",
+    "filename": "ps5-app-dumper_v2.10.elf",
+    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5-app-dumper_v2.10.elf",
+    "source": "https://github.com/EchoStretch/ps5-app-dumper/releases",
+    "source_direct": "https://github.com/EchoStretch/ps5-app-dumper/releases/download/v2.10/ps5-app-dumper_v2.10.elf",
+    "description": "A small utility to dump PS5 application files from the console's pfsmnt to a connected USB storage device.",
+    "last_update": "2026-10-03",
+    "version": "v2.10",
+    "category": "Utilities & Tools",
+    "checksum": "c850f1df6f2787824d6ddeeed69ce4144e00569b32135973401c2985cfb0345b"
+  },
+  {
     "name": "ps5upload",
     "filename": "ps5upload_v5.41.0.elf",
     "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5upload_v5.41.0.elf",
@@ -59,18 +71,6 @@
     "version": "v0.5.2",
     "category": "Utilities & Tools",
     "checksum": "62b3ba2a4937c2afc502f9a4e7242cca538610ebb4ae2800c7c6f72e7f268e7c"
-  },
-  {
-    "name": "ps5-app-dumper",
-    "filename": "ps5-app-dumper_v2.00.elf",
-    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5-app-dumper_v2.00.elf",
-    "source": "https://github.com/EchoStretch/ps5-app-dumper/releases",
-    "source_direct": "https://github.com/EchoStretch/ps5-app-dumper/releases/download/v2.00/ps5-app-dumper_v2.00.elf",
-    "description": "A small utility to dump PS5 application files from the console's pfsmnt to a connected USB storage device.",
-    "last_update": "2026-09-29",
-    "version": "v2.00",
-    "category": "Utilities & Tools",
-    "checksum": "b6fea71afb8937fcd1a933116c620e989acba25b7049eaeaa00cdc1bd604d686"
   },
   {
     "name": "PKG-Manager",
