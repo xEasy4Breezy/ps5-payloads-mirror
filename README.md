@@ -7,7 +7,7 @@ This repository contains an automated mirror of useful payloads for the PlayStat
 <!-- PAYLOADS_START -->
 | Payload | Version | Description | Last Updated | Source | Download |
 | --- | --- | --- | --- | --- | --- |
-| **ps5upload** | `v6.5.1` | Fast, reliable transfers from your computer to your PS5 (requires PC app) | `2026-10-08` | [Source](https://github.com/phantomptr/ps5upload/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5upload_v6.5.1.elf) |
+| **ps5upload** | `v6.7.3` | Fast, reliable transfers from your computer to your PS5 (requires PC app) | `2026-10-09` | [Source](https://github.com/phantomptr/ps5upload/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5upload_v6.7.3.elf) |
 | **WebKit-Autoloader-Installer** | `v0.6.1` | Installs WebKit Autoloader on homescreen (FW 1.00-5.50 & 7.00-13.60) | `2026-10-08` | [Source](https://github.com/itsPLK/ps5-webkit-autoloader/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/WebKit-Autoloader-Installer_v0.6.1.elf) |
 | **PKG-Manager** | `v1.5.0` | Browse and install PKGs from USB, disc, or SMB shares directly on your PS5 | `2026-10-08` | [Source](https://github.com/itsPLK/ps5-pkg-manager/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/PKG-Manager_v1.5.0.elf) |
 | **ps5-web-file-manager** | `v1.10` | A file manager for PS5 with a web UI | `2026-10-05` | [Source](https://github.com/owendswang/ps5-web-file-manager/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5-web-file-manager_v1.10.elf) |
