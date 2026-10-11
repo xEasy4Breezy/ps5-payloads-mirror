@@ -1,15 +1,52 @@
 [
   {
     "name": "ps5upload",
-    "filename": "ps5upload_v6.7.3.elf",
-    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5upload_v6.7.3.elf",
+    "filename": "ps5upload_v7.0.1.elf",
+    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5upload_v7.0.1.elf",
     "source": "https://github.com/phantomptr/ps5upload/releases",
-    "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v6.7.3/ps5upload-6.7.3.elf",
+    "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.1/ps5upload-7.0.1.elf",
     "description": "Fast, reliable transfers from your computer to your PS5 (requires PC app)",
-    "last_update": "2026-10-09",
-    "version": "v6.7.3",
+    "last_update": "2026-10-11",
+    "version": "v7.0.1",
     "category": "Networking & Servers",
-    "checksum": "468740692643ecef083da7d761169c09accec4f43b199a64df9c394ecd6b5df3"
+    "checksum": "cf37ffb531a7dd56fb78d72eb01b5ec44fed40959504581a432b49a8d8352291"
+  },
+  {
+    "name": "PKG-Manager",
+    "filename": "PKG-Manager_v1.5.1.elf",
+    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/PKG-Manager_v1.5.1.elf",
+    "source": "https://github.com/itsPLK/ps5-pkg-manager/releases",
+    "source_direct": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.5.1/pkg-manager_v1.5.1.elf",
+    "description": "Browse and install PKGs from USB, disc, or SMB shares directly on your PS5",
+    "last_update": "2026-10-10",
+    "version": "v1.5.1",
+    "category": "Utilities & Tools",
+    "checksum": "82e3548edcc41419b644482cccaef65689334fc0315dc20247f48b90bf182dca"
+  },
+  {
+    "name": "CheatRunner",
+    "filename": "CheatRunner_v0.18.elf",
+    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/CheatRunner_v0.18.elf",
+    "source": "https://github.com/notmaj0r/CheatRunner/releases",
+    "source_direct": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.18/CheatRunner.elf",
+    "description": "Web-based game cheat trainer",
+    "last_update": "2026-10-10",
+    "version": "v0.18",
+    "category": "Utilities & Tools",
+    "checksum": "4ae1ea4e37b2e67d5487355ddf671f166861ed6dceea348c048ad060770c0140"
+  },
+  {
+    "name": "ShadowMountPlus",
+    "filename": "ShadowMountPlus_1.7-beta5fix1.elf",
+    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ShadowMountPlus_1.7-beta5fix1.elf",
+    "source": "https://github.com/drakmor/ShadowMountPlus/releases",
+    "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7-beta5fix1/ShadowMountPlus_1.7-beta5fix1.zip",
+    "extract_file": "shadowmountplus.elf",
+    "description": "A fully automated, background 'Auto-Mounter' payload for Jailbroken PlayStation 5 consoles.",
+    "last_update": "2026-10-10",
+    "version": "1.7-beta5fix1",
+    "category": "Utilities & Tools",
+    "checksum": "e85fd63b705498488f39c09c9aea6f9fa22e0df2e932865de49a8cedf25172d5"
   },
   {
     "name": "WebKit-Autoloader-Installer",
@@ -22,18 +59,6 @@
     "version": "v0.6.1",
     "category": "Loaders",
     "checksum": "f662c75a502e4f1bc41b055dcb490625f8222c499ce437dc80f439a3a279e93f"
-  },
-  {
-    "name": "PKG-Manager",
-    "filename": "PKG-Manager_v1.5.0.elf",
-    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/PKG-Manager_v1.5.0.elf",
-    "source": "https://github.com/itsPLK/ps5-pkg-manager/releases",
-    "source_direct": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.5.0/pkg-manager_v1.5.0.elf",
-    "description": "Browse and install PKGs from USB, disc, or SMB shares directly on your PS5",
-    "last_update": "2026-10-08",
-    "version": "v1.5.0",
-    "category": "Utilities & Tools",
-    "checksum": "fb29a0e3c058cd69e00320668db57704207b827b92b92e0cd23fb5fe7fe1429d"
   },
   {
     "name": "ps5-web-file-manager",
@@ -58,31 +83,6 @@
     "version": "v2.10",
     "category": "Utilities & Tools",
     "checksum": "c850f1df6f2787824d6ddeeed69ce4144e00569b32135973401c2985cfb0345b"
-  },
-  {
-    "name": "CheatRunner",
-    "filename": "CheatRunner_v0.17.2.elf",
-    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/CheatRunner_v0.17.2.elf",
-    "source": "https://github.com/notmaj0r/CheatRunner/releases",
-    "source_direct": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.17.2/CheatRunner.elf",
-    "description": "Web-based game cheat trainer",
-    "last_update": "2026-10-01",
-    "version": "v0.17.2",
-    "category": "Utilities & Tools",
-    "checksum": "36ad03e236e6603aaaf05d95ed3399c7b54475a9bceba085cbe02899bc88ae0f"
-  },
-  {
-    "name": "ShadowMountPlus",
-    "filename": "ShadowMountPlus_1.7beta3.elf",
-    "url": "https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ShadowMountPlus_1.7beta3.elf",
-    "source": "https://github.com/drakmor/ShadowMountPlus/releases",
-    "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta3/ShadowMountPlus_1.7beta3.zip",
-    "extract_file": "shadowmountplus.elf",
-    "description": "A fully automated, background 'Auto-Mounter' payload for Jailbroken PlayStation 5 consoles.",
-    "last_update": "2026-10-01",
-    "version": "1.7beta3",
-    "category": "Utilities & Tools",
-    "checksum": "2a7427e20ba7a70bd8cd01e47eb00ee7ca82db82dff3da7884f48f9c3fcbe95a"
   },
   {
     "name": "zftpd",
