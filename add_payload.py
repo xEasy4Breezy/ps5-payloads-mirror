@@ -10,6 +10,7 @@ import tempfile
 import shutil
 from datetime import datetime
 from update_payloads import update_readme
+from icon_utils import convert_image_to_data_uri
 
 JSON_FILE = "payloads.json"
 PAYLOADS_DIR = "payloads"
@@ -55,7 +56,7 @@ def calculate_checksum(filepath):
         return None
 
 def reorder_item(item):
-    order = ["name", "filename", "url", "source", "source_direct", "asset_pattern", "extract_file", "description", "last_update", "version", "category", "checksum"]
+    order = ["name", "filename", "url", "source", "source_direct", "asset_pattern", "extract_file", "description", "last_update", "version", "category", "checksum", "icon"]
     new_item = {}
     for key in order:
         if key in item:
@@ -80,6 +81,15 @@ def add_payload():
         return
         
     description = input("Description (optional): ").strip()
+    icon_input = input("Icon URL, file path, or @owner (optional, press Enter to skip): ").strip()
+    icon_data_uri = None
+    if icon_input:
+        try:
+            print(f"  Processing icon from {icon_input}...")
+            icon_data_uri = convert_image_to_data_uri(icon_input)
+            print(f"  Icon processed successfully ({len(icon_data_uri)} chars).")
+        except Exception as e:
+            print(f"  Warning: Failed to process icon ({e}). Skipping icon.")
 
     try:
         with open(JSON_FILE, "r") as f:
@@ -227,6 +237,8 @@ def add_payload():
         }
         if extract_file:
             new_item["extract_file"] = extract_file
+        if icon_data_uri:
+            new_item["icon"] = icon_data_uri
         
         payloads.append(new_item)
         payloads.sort(key=lambda x: x.get("last_update", ""), reverse=True)

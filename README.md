@@ -7,7 +7,7 @@ This repository contains an automated mirror of useful payloads for the PlayStat
 <!-- PAYLOADS_START -->
 | Payload | Version | Description | Last Updated | Source | Download |
 | --- | --- | --- | --- | --- | --- |
-| **ps5upload** | `v7.0.1` | Fast, reliable transfers from your computer to your PS5 (requires PC app) | `2026-10-11` | [Source](https://github.com/phantomptr/ps5upload/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5upload_v7.0.1.elf) |
+| **ps5upload** | `v7.0.13` | Fast, reliable transfers from your computer to your PS5 (requires PC app) | `2026-10-12` | [Source](https://github.com/phantomptr/ps5upload/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5upload_v7.0.13.elf) |
 | **ps-patch-system** | `38108724867` | App patching system | `2026-10-11` | [Source](https://github.com/illusionyy/ps-patch-system/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps-patch-system_38108724867.elf) |
 | **PKG-Manager** | `v1.5.1` | Browse and install PKGs from USB, disc, or SMB shares directly on your PS5 | `2026-10-10` | [Source](https://github.com/itsPLK/ps5-pkg-manager/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/PKG-Manager_v1.5.1.elf) |
 | **CheatRunner** | `v0.18` | Web-based game cheat trainer | `2026-10-10` | [Source](https://github.com/notmaj0r/CheatRunner/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/CheatRunner_v0.18.elf) |
